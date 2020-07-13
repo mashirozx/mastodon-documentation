@@ -1,7 +1,7 @@
-baseURL = "http://docs.joinmastodon.org/"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "Mastodon documentation"
+baseURL = "https://docs-hello.2heng.xin/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Mastodon 使用指南"
 pygmentsCodeFences = true
 pygmentsStyle = "dracula"
 metaDataFormat = "yaml"
