@@ -1,0 +1,31 @@
+name: Pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Setup Hugo 🔭
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.62.1'
+        extended: true
+
+    - name: Build🏗️
+      run: hugo --minify
+
+    # deploy
+    - name: Deploy 🚀
+      #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: public
+        CLEAN: true
