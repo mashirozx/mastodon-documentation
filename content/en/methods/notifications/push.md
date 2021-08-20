@@ -15,6 +15,7 @@ Mastodon natively supports the [Web Push API](https://developer.mozilla.org/en-U
 
 * [toot-relay](https://github.com/DagAgren/toot-relay)
 * [PushToFCM](https://github.com/tateisu/PushToFCM)
+* [metatext-apns](https://github.com/metabolist/metatext-apns)
 
 {{< api-method method="post" host="https://mastodon.example" path="/api/v1/push/subscription" title="Subscribe to push notifications" >}}
 {{< api-method-description >}}
@@ -23,9 +24,8 @@ Add a Web Push API subscription to receive notifications. Each access token can 
 
 **Returns:** PushSubscription\
 **OAuth:** User token + `push`\
-**Version history:**
-
-- 2.4.0 - added
+**Version history:**\
+2.4.0 - added
 
 {{< endapi-method-description >}}
 {{< api-method-spec >}}
@@ -95,9 +95,8 @@ View the PushSubscription currently associated with this access token.
 
 **Returns:** PushSubscription\
 **OAuth:** User token + `push`\
-**Version history:**
-
-- 2.4.0 - added
+**Version history:**\
+2.4.0 - added
 
 {{< endapi-method-description >}}
 {{< api-method-spec >}}
@@ -152,9 +151,8 @@ Updates the current push subscription. Only the data part can be updated. To cha
 
 **Returns:** PushSubscription\
 **OAuth:** User token + `push`\
-**Version history:**
-
-- 2.4.0 - added
+**Version history:**\
+2.4.0 - added
 
 {{< endapi-method-description >}}
 {{< api-method-spec >}}
@@ -228,9 +226,8 @@ Removes the current Web Push API subscription.
 
 **Returns:** none\
 **OAuth:** User token + `push`\
-**Version history:**
-
-- 2.4.0 - added
+**Version history:**\
+2.4.0 - added
 
 {{< endapi-method-description >}}
 {{< api-method-spec >}}
